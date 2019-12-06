@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WelActivity">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="商家小幫手"
+        android:gravity="center"
+        android:textSize="48dp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36dp"
+        ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="請選擇要查詢之方案"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textStyle="italic"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="56dp"
+        ></TextView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="尋找"
+        android:layout_gravity="center"
+        android:onClick="select"></Button>
+    <com.lukedeighton.wheelview.WheelView
+        android:id="@+id/wheelview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:wheelColor="@android:color/holo_blue_bright"
+        app:rotatableWheelDrawable="false"
+        app:selectionAngle="90.0"
+        app:wheelPosition="bottom"
+        app:wheelOffsetY="60dp"
+        app:repeatItems="true"
+        app:wheelRadius="276dp"
+        app:wheelItemCount="10"
+        app:wheelPadding="13dp"
+        app:wheelItemRadius="43dp"
+        app:selectionColor="@android:color/holo_red_dark"
+
+        />
+
+</LinearLayout>

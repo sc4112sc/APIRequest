@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/detail_img"
+        android:layout_width="match_parent"
+        android:layout_weight="4"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/images0"></ImageView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="地址"
+        android:onClick="gotoMap"></Button>
+
+    <Button
+        android:id="@+id/detail_content2"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:scrollbars = "vertical"
+        android:textStyle="italic"
+        android:onClick="call"
+        android:text="aaa aaa aaa aaa"></Button>
+    <TextView
+        android:id="@+id/detail_content"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:text="aaa aaa aaa aaa"></TextView>
+
+    <TextView
+        android:id="@+id/detail_content3"
+        android:layout_width="wrap_content"
+        android:layout_weight="6"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:text="aaa aaa aaa aaa"></TextView>
+
+
+
+
+
+
+
+
+</LinearLayout>
